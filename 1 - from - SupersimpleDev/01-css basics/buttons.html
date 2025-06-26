@@ -8,14 +8,51 @@
 <body>
 
     <style>
-        button{
-            background-color: red;
+        .subscribe_button{
+            background-color: rgb(204, 0, 0);
             color: white;
-            padding: 8px 16px;
+            height: 36px;
+            width: 105px;
             border: none;
+            border-radius: 2px;
+            margin-right: 30px;
         }
+        .subscribe_button:hover{
+            background-color: rgba(180, 0, 0, 0.467);
+            cursor: pointer;
+        }
+        .join_button{
+            background-color:#fff;
+            height: 36px;
+            width: 68px;
+            margin-right: 30px;
+            color:  rgb(24, 125, 226);
+            border: 2px solid rgb(24, 125, 226);
+        }
+        .join_button:hover{
+            color: #fff;
+            background-color: rgb(24, 125, 226);
+            cursor: pointer;
+        }
+        .tweet_button{
+            background-color:rgb(24, 125, 226);
+            color: #fff;
+            border: none;
+            height: 36px;
+            width: 80px;
+            border-radius:30px;
+            font-weight: bold;
+            transition: box-shadow 0.15s;
+        }
+        .tweet_button:hover{
+            box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+
     </style>
 
-    <button>SUBSCRIBE</button>
+    <button class="subscribe_button">SUBSCRIBE</button>
+    <button class="join_button">JOIN</button>
+    <button class="tweet_button">Tweet</button>
 </body>
 </html>
