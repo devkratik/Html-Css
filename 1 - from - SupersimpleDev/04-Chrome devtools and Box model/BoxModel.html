@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model Properties</title>
+  </head>
+  <body>
+    <!--
+    1. First learned about margins sets space outside or around 
+    the element.
+    2. Then got to know about padding what we using till now is 
+    height and width for button but as soon as out text grows it's
+    not a good fit so Always make sure to use padding for it !
+    Padding is better alternative for height and width!
+    3. Learned Box model in computed tab!
+    4. Modified margin padding in all 3 buttons
+    5. Buttons or anything browser tries to align them using text! 
+    It's their default behaviour . Used vertical align property to 
+    overwrite this behaviour!
+    6. Finally box model comprises of padding and margin!
+    -->
+    <style>
+      .subscribe_button {
+        margin-right: 8px; /*lets us set space outside the element*/
+        background-color: rgb(204, 0, 0);
+        color: white;
+        /* height: 36px;
+        width: 105px; */
+        padding: 10px 16px; /*lets us set space inside the element*/
+        border: none;
+        border-radius: 2px;
+        cursor: pointer;
+        vertical-align: top;
+        transition: all 0.25s ease;
+      }
+      .subscribe_button:hover {
+        opacity: 0.7;
+      }
+      .subscribe_button:active {
+        opacity: 0.4;
+      }
+
+      .join_button {
+        background-color: #fff;
+        /* height: 36px;
+        width: 68px; */
+        padding: 9px 15px;
+        margin-right: 8px;
+        color: rgb(6, 95, 212);
+        border: 1px solid rgb(6, 95, 212);
+        cursor: pointer;
+        transition: all 0.25s ease;
+        vertical-align: top;
+      }
+      .join_button:hover {
+        background-color: rgb(6, 95, 212);
+        color: #fff;
+        font-weight: bold;
+      }
+      .join_button:active {
+        opacity: 0.7;
+      }
+
+      .tweet_button {
+        background-color: rgb(29, 155, 240);
+        color: #fff;
+        border: none;
+        /* height: 36px;
+        width: 80px; */
+        padding: 7px 16px;
+        border-radius: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.15s ease;
+        vertical-align: top;
+      }
+      .tweet_button:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+      .tweet_button:active {
+        opacity: 0.7;
+      }
+    </style>
+
+    <button class="subscribe_button">SUBSCRIBE</button>
+    <button class="join_button">JOIN</button>
+    <button class="tweet_button">Tweet</button>
+  </body>
+</html>

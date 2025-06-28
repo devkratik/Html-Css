@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text stylings</title>
+  </head>
+  <body>
+    <style>
+      /*Intro to specificity:Here as we can see we set margin bottom 0 in p tag but
+        also setting to some value in classes , so how does that work
+        it's actually browser follows priority called css-specificity!
+        The selector that more specific has higher priority
+        Below class selector is specific that tag selector! So
+        class styles get applied even if we put margin 0 in tag above all */
+      p {
+        font-family: Arial;
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+      .video_title {
+        font-weight: bold;
+        font-size: 18px;
+        width: 280px;
+        line-height: 24px;
+        margin-bottom: 5px;
+      }
+      .video_stats {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        margin-bottom: 20px;
+      }
+      .video_author {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        margin-bottom: 20px;
+      }
+      .video_description {
+        font-size: 14px;
+        color: rgb(96, 96, 96);
+        width: 280px;
+        line-height: 22px;
+        margin-bottom: 100px;
+      }
+      .apple-text {
+        font-size: 14px;
+        background-color: rgb(227, 65, 64);
+        text-align: center;
+        color: #fff;
+        padding: 30px;
+      }
+      .shop_link {
+        cursor: pointer;
+      }
+      .shop_link:hover {
+        text-decoration: underline;
+      }
+    </style>
+    <p class="video_title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="video_stats">3.4M views &middot; 6 months ago</p>
+    <p class="video_author">Marques Brownlee &check;</p>
+    <p class="video_description">
+      Talking tech and AI on the heels of Google I/O. Also a daily driver phone
+      reveal from Google's CEO. Shoutout to Sundar!
+    </p>
+    <p class="apple-text">
+      Shop early for the best selection of holiday favourites.
+      <span class="shop_link">Shop now&gt;</span>
+    </p>
+    <!--There are other text element like u , strong etc we used span
+    above to target particular text ! Also  to acheive multiple spaces
+    we can use &nbsp; html entity okay-->
+  </body>
+</html>
