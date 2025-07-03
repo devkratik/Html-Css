@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9g</title>
+    <style>
+      html {
+        background-color: #000;
+      }
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial;
+      }
+
+      .card1,
+      .card2,
+      .card3 {
+        width: 170px;
+        /* height: 250px; */
+        margin: 50px 0px 0px 50px;
+        padding: 0px 0px 5px 0px;
+        border-radius: 10px;
+        border: 1px solid teal;
+        transition: all 300ms ease;
+        display: inline-block;
+        overflow: hidden;
+      }
+      .card1:hover {
+        border: none;
+        box-shadow: -6px -6px 8px rgba(235, 157, 78, 0.605),
+          /* top-left */ 6px 6px 8px rgba(154, 238, 255, 0.813); /* bottom-right */
+      }
+      .card2:hover {
+        border: none;
+        box-shadow: -6px -6px 8px rgba(235, 157, 78, 0.605),
+          /* top-left */ 6px 6px 8px rgba(255, 215, 134, 0.813); /* bottom-right */
+      }
+      .card3:hover {
+        border: none;
+        box-shadow: -6px -6px 8px rgba(39, 162, 255, 0.605),
+          /* top-left */ 6px 6px 8px rgba(253, 208, 63, 0.813); /* bottom-right */
+      }
+      .content-img {
+        width: 100%;
+        height: 150px;
+        margin-bottom: 8px;
+        object-fit: cover;
+      }
+      .user_name {
+        color: #fff;
+        margin-left: 4px;
+        margin-bottom: 2px;
+        font-weight: bold;
+      }
+      .user_friends {
+        margin-left: 4px;
+        margin-bottom: 20px;
+        color: gray;
+        font-size: 14px;
+      }
+      .friend-btn {
+        margin-left: 4px;
+        cursor: pointer;
+        padding: 6px 12px;
+        color: #fff;
+        background-color: rgb(83, 152, 255);
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card1">
+      <img class="content-img" src="cat.jpg" alt="billi" />
+      <p class="user_name">Oliver</p>
+      <p class="user_friends">2 mutual friends</p>
+      <button class="friend-btn">Add friend</button>
+    </div>
+    <div class="card2">
+      <img class="content-img" src="cat2.jpg" alt="billi" />
+      <p class="user_name">Mimi</p>
+      <p class="user_friends">3 mutual friends</p>
+      <button class="friend-btn">Add friend</button>
+    </div>
+    <div class="card3">
+      <img class="content-img" src="dog.jpg" alt="billi" />
+      <p class="user_name">Rex</p>
+      <p class="user_friends">4 mutual friends</p>
+      <button class="friend-btn">Add friend</button>
+    </div>
+  </body>
+</html>

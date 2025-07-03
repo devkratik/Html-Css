@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*  
+       Display Properties:
+       How come both image of thumbnail and text input box come in same line &
+       all paragraphs in next line one by one ? This is because of display properties
+       
+       Some are Block elements by default Some are inline-block element by default in HTML
+       i.e. Display:block or Display:inline-block ;
+
+       Block by default takes entire line even if you set their width they will take entire line
+       BUT inline-block takes only space that's needed!
+
+       Third type is inline element which appears within a line of text like strong span etc.
+      */
+
+      /*Text Boxes Learning*/
+      .search_bar {
+        font-size: 16px;
+        outline: none;
+      }
+      .search_bar:focus {
+        outline: none;
+      }
+
+      /*Actual Styles Below*/
+      .thumbnail {
+        width: 300px;
+        display: block;
+      }
+      .video_title {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search_bar" type="text" placeholder="Search" />
+
+    <img
+      class="thumbnail img_learning"
+      src="../07-Image and Text Boxes/thumbnails/01.jpeg"
+      alt=""
+    />
+    <p class="video_title">Kendrick Lamar, SZA - All The Stars</p>
+    <p class="video_creator">Kendrick Lamar</p>
+    <p class="video_stats">545M views &middot; 7 years ago</p>
+  </body>
+</html>

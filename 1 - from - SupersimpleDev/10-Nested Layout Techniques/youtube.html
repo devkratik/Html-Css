@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*  
+       In this section, We goin to learn about nested layout techniques i.e. Div inside Div 
+
+      */
+
+      /*Text Boxes Learning*/
+      .search_bar {
+        display: block;
+        font-size: 16px;
+        outline: none;
+      }
+      .search_bar:focus {
+        outline: none;
+      }
+
+      /*Actual Styles Below*/
+      .thumbnail {
+        width: 100%;
+        display: block;
+      }
+      .video_title {
+        width: 300px;
+      }
+      /*div learning*/
+      .video-preview {
+        width: 280px;
+        display: inline-block;
+        margin-right: 16px;
+        /* vertical-align: top; */
+      }
+      .video-info {
+        border: 1px solid black;
+      }
+      .channel-img,
+      .video-info_content {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .video-info_content {
+        width: 80%;
+        border: 1px solid red;
+      }
+      .video_title {
+        width: 100%;
+      }
+      .channel-img {
+        width: 40px;
+        border: 1px solid black;
+        height: 140px;
+      }
+      .profile-img {
+        margin-top: 14px;
+        width: 100%;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <input class="search_bar" type="text" placeholder="Search" />
+    <!--DIV-->
+
+    <div class="video-preview">
+      <div class="video-thumbnai">
+        <img
+          class="thumbnail img_learning"
+          src="../07-Image and Text Boxes/thumbnails/02.jpg"
+          alt=""
+        />
+      </div>
+      <div class="video-info">
+        <div class="channel-img">
+          <img class="profile-img" src="unnamed.jpg" alt="" />
+        </div>
+        <div class="video-info_content">
+          <p class="video_title">HTML & CSS Full Course - Beginner to Pro</p>
+          <p class="video_creator">SuperSimpleDev</p>
+          <p class="video_stats">15M views &middot; 3 years ago</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

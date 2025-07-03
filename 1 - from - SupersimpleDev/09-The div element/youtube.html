@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /*  
+       In this section, We goin to learn the DIV element!:
+       By default DIV is block element and just a box! But we can change it
+       to inline block as well!
+       Div creates the box around our content!
+
+       Why Div useful?
+       It can literally contain any other html element inside it and we use it
+       to make layout of our webpage , containing other html element inside it!
+
+      */
+
+      /*Text Boxes Learning*/
+      .search_bar {
+        display: block;
+        font-size: 16px;
+        outline: none;
+      }
+      .search_bar:focus {
+        outline: none;
+      }
+
+      /*Actual Styles Below*/
+      .thumbnail {
+        width: 300px;
+        display: block;
+      }
+      .video_title {
+        width: 300px;
+      }
+      /*div learning*/
+      .video-preview {
+        width: 300px;
+        display: inline-block;
+        margin-right: 16px;
+        /* vertical-align: top; */
+      }
+    </style>
+  </head>
+  <body>
+    <!--DIV-->
+    <input class="search_bar" type="text" placeholder="Search" />
+    <div class="video-preview">
+      <img
+        class="thumbnail img_learning"
+        src="../07-Image and Text Boxes/thumbnails/01.jpeg"
+        alt=""
+      />
+      <p class="video_title">Kendrick Lamar, SZA - All The Stars</p>
+      <p class="video_creator">Kendrick Lamar</p>
+      <p class="video_stats">545M views &middot; 7 years ago</p>
+    </div>
+    <div class="video-preview">
+      <img
+        class="thumbnail img_learning"
+        src="../07-Image and Text Boxes/thumbnails/02.jpg"
+        alt=""
+      />
+      <p class="video_title">HTML & CSS Full Course - Beginner to Pro</p>
+      <p class="video_creator">SuperSimpleDev</p>
+      <p class="video_stats">15M views &middot; 3 years ago</p>
+    </div>
+  </body>
+</html>
