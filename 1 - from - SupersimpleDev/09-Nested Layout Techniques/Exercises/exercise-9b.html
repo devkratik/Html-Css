@@ -4,6 +4,157 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise-9b</title>
+    <style>
+      * {
+        margin: 0px;
+        font-family: Arial;
+        /* box-sizing: border-box; */
+      }
+      .accounts_container {
+        /* border: 2px solid red; */
+        width: 400px;
+        height: 300px;
+        padding: 20px;
+      }
+      .account1_container,
+      .account2_container,
+      .account3_container {
+        width: 100%;
+        height: 33%;
+        /* border: 1px solid red; */
+      }
+      .account1_container_left,
+      .account1_container_right,
+      .account2_container_left,
+      .account2_container_right,
+      .account3_container_left,
+      .account3_container_right {
+        width: 48%;
+        height: 95%;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .account1_container_left-left,
+      .account2_container_left-left,
+      .account3_container_left-left {
+        width: 30%;
+        height: 95%;
+        display: inline-block;
+        /* border: 1px solid purple; */
+        font-size: 16px;
+        vertical-align: middle;
+      }
+      .account1_image,
+      .account2_image,
+      .account3_image {
+        object-fit: cover;
+        width: 100%;
+        height: 65%;
+        border-radius: 50%;
+        margin: 16px auto 0 auto;
+        display: block;
+      }
+      .account1_container_left-right,
+      .account2_container_left-right,
+      .account3_container_left-right {
+        width: 65%;
+        height: 95%;
+        /* border: 1px solid purple; */
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .account_username {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 6px;
+        margin-top: 14px;
+      }
+      .account_breed {
+        color: rgb(96, 96, 96);
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      .account_fame {
+        color: rgb(96, 96, 96);
+        font-size: 16px;
+      }
+      .account1_container_right_btn-follow,
+      .account2_container_right_btn-follow,
+      .account3_container_right_btn-follow {
+        margin-top: 30px;
+        width: 100%;
+        height: 40%;
+        /* border: 1px solid orange; */
+        text-align: right;
+      }
+      .account_btn-follow {
+        background-color: rgb(65, 164, 250);
+        color: #fff;
+        border: none;
+        padding: 8px 16px;
+        font-weight: bold;
+        margin-top: 3px;
+        border-radius: 8px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="accounts_container">
+      <!--Account_1-->
+      <div class="account1_container">
+        <div class="account1_container_left">
+          <div class="account1_container_left-left">
+            <img class="account1_image" src="cat.jpg" alt="billi" />
+          </div>
+          <div class="account1_container_left-right">
+            <div class="account_username">Oliver</div>
+            <div class="account_breed">The Cat</div>
+            <div class="account_fame">Popular</div>
+          </div>
+        </div>
+        <div class="account1_container_right">
+          <div class="account1_container_right_btn-follow">
+            <button class="account_btn-follow">Follow</button>
+          </div>
+        </div>
+      </div>
+      <!--Account2-->
+      <div class="account2_container">
+        <div class="account2_container_left">
+          <div class="account2_container_left-left">
+            <img class="account2_image" src="cat2.jpg" alt="billi2" />
+          </div>
+          <div class="account2_container_left-right">
+            <div class="account_username">Mimi</div>
+            <div class="account_breed">Sleepy Cat</div>
+            <div class="account_fame">Popular</div>
+          </div>
+        </div>
+        <div class="account2_container_right">
+          <div class="account2_container_right_btn-follow">
+            <button class="account_btn-follow">Follow</button>
+          </div>
+        </div>
+      </div>
+      <!--Account3-->
+      <div class="account3_container">
+        <div class="account3_container_left">
+          <div class="account3_container_left-left">
+            <img class="account3_image" src="dog.jpg" alt="kutta" />
+          </div>
+          <div class="account3_container_left-right">
+            <div class="account_username">Rex</div>
+            <div class="account_breed">Happy Bulldog</div>
+            <div class="account_fame">Popular</div>
+          </div>
+        </div>
+        <div class="account3_container_right">
+          <div class="account3_container_right_btn-follow">
+            <button class="account_btn-follow">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
