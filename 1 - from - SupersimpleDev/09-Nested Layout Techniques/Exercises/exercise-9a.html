@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise-9a</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0px;
+      }
+      .account_container {
+        padding: 14px;
+        width: 480px;
+        height: 100px;
+        border: 1px solid gray;
+      }
+      .account_container-left,
+      .account_container-right {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .account_container-left {
+        width: 180px;
+        height: 100%;
+      }
+      .content_container-left {
+        width: 100%;
+        height: 100%;
+      }
+      .content_left,
+      .content_right {
+        display: inline-block;
+        width: 45%;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .content_right {
+        margin-left: 12px;
+      }
+      .account-left {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: 8px;
+      }
+      .container-right_name {
+        margin-top: 10px;
+        margin-bottom: 4px;
+
+        font-weight: bold;
+        font-size: 22px;
+      }
+      .container-right_type {
+        color: rgb(94, 94, 94);
+        font-size: 18px;
+        margin-bottom: 6px;
+      }
+      .container-right_fame {
+        color: rgb(94, 94, 94);
+        font-size: 18px;
+      }
+      .account_container-right {
+        width: 280px;
+        height: 100%;
+      }
+      .content_container-right {
+        width: 100%;
+        height: 30%;
+        margin-top: 35px;
+        text-align: right;
+      }
+      .button-follow {
+        background-color: hsl(217, 100%, 71%);
+        color: #fff;
+        padding: 8px 22px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="account_container">
+      <div class="account_container-left">
+        <div class="content_container-left">
+          <div class="content_left">
+            <img class="account-left" src="cat.jpg" alt="billi" />
+          </div>
+          <div class="content_right">
+            <div class="container-right_name">Oliver</div>
+            <div class="container-right_type">the Cat</div>
+            <div class="container-right_fame">Popular</div>
+          </div>
+        </div>
+      </div>
+      <div class="account_container-right">
+        <div class="content_container-right">
+          <div class="content_right-follow">
+            <button class="button-follow">Follow</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

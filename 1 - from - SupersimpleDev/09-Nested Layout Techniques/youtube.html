@@ -6,11 +6,18 @@
     <title>YouTube</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+    <style>
       /*  
        In this section, We goin to learn about nested layout techniques i.e. Div inside Div 
 
       */
 
+      p {
+        font-family: Roboto, Arial;
+        margin: 0px;
+      }
       .search_bar {
         display: block;
         font-size: 16px;
@@ -23,18 +30,14 @@
       .thumbnail {
         width: 100%;
       }
-      .video_title {
-        width: 300px;
-      }
+
       .video-preview {
         width: 280px;
         display: inline-block;
         margin-right: 16px;
         /* vertical-align: top; */
       }
-      .video-info {
-        border: 1px solid black;
-      }
+
       .channel-img,
       .video-info_content {
         display: inline-block;
@@ -42,42 +45,70 @@
       }
       .video-info_content {
         width: 80%;
-        border: 1px solid red;
       }
       .video_title {
+        width: 300px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 12px;
         width: 100%;
       }
+      .video_creator,
+      .video_stats {
+        font-size: 14px;
+        color: rgb(95, 95, 95);
+      }
+      .video_creator {
+        margin-bottom: 4px;
+      }
+
       .channel-img {
         width: 40px;
-        border: 1px solid black;
         height: 140px;
       }
       .profile-img {
-        margin-top: 14px;
         width: 100%;
+        border-radius: 40px;
+      }
+      .video-thumbnai {
+        margin-bottom: 12px;
       }
     </style>
   </head>
   <body>
     <input class="search_bar" type="text" placeholder="Search" />
-    <!--DIV-->
-
+    <!--video1-->
     <div class="video-preview">
       <div class="video-thumbnai">
-        <img
-          class="thumbnail img_learning"
-          src="../06-Image and Text Boxes/thumbnails/02.jpg"
-          alt=""
-        />
+        <img class="thumbnail img_learning" src="./thumbnails/02.jpg" alt="" />
       </div>
       <div class="video-info">
         <div class="channel-img">
-          <img class="profile-img" src="./channelProfiles/unnamed.jpg" alt="" />
+          <img class="profile-img" src="./channelProfiles/01.jpg" alt="" />
         </div>
         <div class="video-info_content">
           <p class="video_title">HTML & CSS Full Course - Beginner to Pro</p>
           <p class="video_creator">SuperSimpleDev</p>
           <p class="video_stats">15M views &middot; 3 years ago</p>
+        </div>
+      </div>
+    </div>
+    <!--video2-->
+    <div class="video-preview">
+      <div class="video-thumbnai">
+        <img class="thumbnail img_learning" src="./thumbnails/05.webp" alt="" />
+      </div>
+      <div class="video-info">
+        <div class="channel-img">
+          <img class="profile-img" src="./channelProfiles/02.jpg" alt="" />
+        </div>
+        <div class="video-info_content">
+          <p class="video_title">
+            Kadane's Algorithm to Maximum Sum Subarray Problem
+          </p>
+          <p class="video_creator">CS Dojo</p>
+          <p class="video_stats">783K views &middot; 9 years ago</p>
         </div>
       </div>
     </div>
