@@ -4,6 +4,138 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise-9c</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .video_container {
+        margin: 30px 0px 0px 60px;
+        width: 480px;
+        height: 360px;
+        border: 1px solid gray;
+        padding: 8px;
+        background-color: rgba(128, 128, 128, 0.082);
+      }
+      .video1_container,
+      .video2_container,
+      .video3_container {
+        width: 100%;
+        height: 110px;
+        /* border: 1px solid red; */
+      }
+      .video1_container,
+      .video2_container {
+        margin-bottom: 4px;
+      }
+      .video1_container_left,
+      .video2_container_left,
+      .video3_container_left {
+        width: 40%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .video1_thumbnail,
+      .video2_thumbnail,
+      .video3_thumbnail {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        cursor: pointer;
+      }
+      .video1_container_right,
+      .video2_container_right,
+      .video3_container_right {
+        margin-left: 4px;
+        width: 58%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .video_title,
+      .video_creator,
+      .video_stats {
+        width: 100%;
+        /* height: 30%; */
+        /* border: 1px solid red; */
+      }
+      .video_title-content {
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      .video_creator-content,
+      .video_stats-content {
+        font-size: 14px;
+        margin-top: 4px;
+        color: rgb(96, 96, 96);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!--VideosContainer-->
+    <div class="video_container">
+      <!-- Video 1-->
+      <div class="video1_container">
+        <div class="video1_container_left">
+          <img class="video1_thumbnail" src="../thumbnails/04.jpeg" alt="" />
+        </div>
+        <div class="video1_container_right">
+          <div class="video_title">
+            <p class="video_title-content">If We Being Rëal [Official Audio]</p>
+          </div>
+          <div class="video_creator">
+            <p class="video_creator-content">Yeat Music</p>
+          </div>
+          <div class="video_stats">
+            <p class="video_stats-content">38M views &middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Video 2-->
+      <div class="video2_container">
+        <div class="video2_container_left">
+          <img class="video2_thumbnail" src="../thumbnails/06.jpg" alt="" />
+        </div>
+        <div class="video2_container_right">
+          <div class="video_title">
+            <p class="video_title-content">
+              TIMELESS but it sounds heavenly (OVERLAPPED + REVERBED + BASS
+              BOOSTED + SLOWED)
+            </p>
+          </div>
+          <div class="video_creator">
+            <p class="video_creator-content">ʀᴀᴅɪᴀɴᴛ ꜱᴘᴀʀᴋ</p>
+          </div>
+          <div class="video_stats">
+            <p class="video_stats-content">2.8M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!-- Video 3-->
+      <div class="video3_container">
+        <div class="video3_container_left">
+          <img class="video3_thumbnail" src="../thumbnails/07.jpg" alt="" />
+        </div>
+        <div class="video3_container_right">
+          <div class="video_title">
+            <p class="video_title-content">
+              Kendrick Lamar's Apple Music Super Bowl Halftime Show
+            </p>
+          </div>
+          <div class="video_creator">
+            <p class="video_creator-content">NFL</p>
+          </div>
+          <div class="video_stats">
+            <p class="video_stats-content">135M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
