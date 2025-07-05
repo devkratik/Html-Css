@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        font-family: Arial;
+        box-sizing: border-box;
+      }
+      .cards_container {
+        width: 600px;
+        height: 300px;
+        margin-top: 40px;
+        margin-left: 100px;
+        padding: 4px;
+        border: 2px solid rgba(132, 132, 132, 0.747);
+        background-color: beige;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 6px;
+        align-items: center;
+      }
+      .card_container {
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid blue; */
+      }
+      .card_container-top,
+      .card_container-bottom {
+        /* border: 1px solid purple; */
+      }
+      .card_container-top {
+        height: 65%;
+      }
+      .cart_top-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card_container-bottom {
+        height: 35%;
+        padding-top: 4px;
+      }
+      .card_username {
+        width: 100%;
+        height: 30%;
+        /* border: 1px solid orange; */
+        font-weight: bold;
+        font-size: 18px;
+      }
+      .card_userFriends {
+        width: 100%;
+        height: 35%;
+        /* border: 1px solid orange; */
+        display: grid;
+        grid-template-columns: 34px 1fr;
+        column-gap: 4px;
+      }
+      .card_userFriends-left {
+        height: 100%;
+        /* border: 1px solid purple; */
+      }
+      .friend-img {
+        width: 100%;
+        display: block;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .card_userFriends-right {
+        height: 100%;
+        /* border: 1px solid purple; */
+        color: gray;
+        padding-top: 6px;
+        text-align: left;
+      }
+      .card_btn-Follow {
+        text-align: left;
+        padding-top: 2px;
+        margin-top: 2px;
+      }
+      .add-btn {
+        padding: 8px 16px;
+        cursor: pointer;
+        border: none;
+        color: #fff;
+        background-color: rgb(100, 160, 255);
+        border-radius: 3px;
+      }
+    </style>
+    <title>Exercise 11d</title>
+  </head>
+  <body>
+    <div class="cards_container">
+      <div class="card_container">
+        <div class="card_container-top">
+          <img class="cart_top-image" src="cat.jpg" alt="" />
+        </div>
+        <div class="card_container-bottom">
+          <div class="card_username">Oliver</div>
+          <div class="card_userFriends">
+            <div class="card_userFriends-left">
+              <img class="friend-img" src="./friend.jpg" alt="" />
+            </div>
+            <div class="card_userFriends-right">2 mutual friends</div>
+          </div>
+          <div class="card_btn-Follow">
+            <button class="add-btn">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="card_container-top">
+          <img class="cart_top-image" src="cat2.jpg" alt="" />
+        </div>
+        <div class="card_container-bottom">
+          <div class="card_username">Mimi</div>
+          <div class="card_userFriends">
+            <div class="card_userFriends-left">
+              <img class="friend-img" src="./friend.jpg" alt="" />
+            </div>
+            <div class="card_userFriends-right">4 mutual friends</div>
+          </div>
+          <div class="card_btn-Follow">
+            <button class="add-btn">Add Friend</button>
+          </div>
+        </div>
+      </div>
+      <div class="card_container">
+        <div class="card_container-top">
+          <img class="cart_top-image" src="dog.jpg" alt="" />
+        </div>
+        <div class="card_container-bottom">
+          <div class="card_username">Rex</div>
+          <div class="card_userFriends">
+            <div class="card_userFriends-left">
+              <img class="friend-img" src="./friend.jpg" alt="" />
+            </div>
+            <div class="card_userFriends-right">2 mutual friends</div>
+          </div>
+          <div class="card_btn-Follow">
+            <button class="add-btn">Add Friend</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 11b</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 50px 1fr 75px;
+      }
+      .div1 {
+        background-color: rgb(116, 225, 116);
+      }
+      .div2 {
+        background-color: rgb(149, 154, 245);
+      }
+      .div3 {
+        background-color: rgb(255, 194, 151);
+      }
+      .div1,
+      .div2,
+      .div3 {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div1">50px</div>
+      <div class="div2">Remaining Space (1fr)</div>
+      <div class="div3">75px</div>
+    </div>
+  </body>
+</html>
