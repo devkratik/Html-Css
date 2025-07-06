@@ -1,0 +1,31 @@
+.search_bar {
+    display: block;
+    font-size: 16px;
+    outline: none;
+}
+.search_bar:focus {
+    outline: none;
+}
+.header{
+    height: 55px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section{
+    background-color: lightblue;
+    width: 150px;
+}
+.middle-section{
+    background-color: lightpink;
+ flex: 1;
+ max-width: 550px;
+ margin-left: 70px;
+ margin-right: 35px;
+}
+.right-section{
+    background-color: lightblue;
+    width: 200px;
+}

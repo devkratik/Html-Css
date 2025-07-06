@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 12e</title>
+    <style>
+      * {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+      }
+      .container {
+        margin: 100px 0px 0px 300px;
+        width: 240px;
+        padding: 4px;
+        border: 1px solid gray;
+        border-radius: 4px;
+      }
+      .div {
+        width: 100%;
+        padding: 6px;
+        /* border: 1px solid orange; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .counter {
+        padding: 4px 8px;
+        background-color: rgb(69, 155, 247);
+        color: #fff;
+        font-weight: bold;
+        border-radius: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="div">
+        <p>Home</p>
+        <p class="counter">14</p>
+      </div>
+      <div class="div">
+        <p>Notifications</p>
+        <p class="counter">3</p>
+      </div>
+
+      <div class="div">
+        <p>Messages</p>
+        <p class="counter">8</p>
+      </div>
+    </div>
+  </body>
+</html>

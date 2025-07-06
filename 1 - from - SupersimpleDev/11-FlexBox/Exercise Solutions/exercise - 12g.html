@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 12g</title>
+    <style>
+      * {
+        font-family: Arial;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 400px;
+        height: 300px;
+        margin: 100px 0px 0px 200px;
+        padding: 6px;
+        border: 1px solid gray;
+        border-radius: 8px;
+        background-color: rgba(204, 204, 204, 0.092);
+        /* border: 2px solid red; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .users_container {
+        width: 100%;
+        height: 100px;
+        /* border: 1px solid orange; */
+        padding: 4px;
+        display: flex;
+        align-items: center;
+      }
+      .user_container_left {
+        width: 55%;
+        height: 100%;
+        /* border: 1px solid purple; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .user_container_left-img {
+        width: 40%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .user_img {
+        width: 100%;
+        height: 74%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .user_container_left-info {
+        flex: 1;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 16px;
+      }
+      .user_name {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .user_breed {
+        font-size: 16px;
+        color: rgb(108, 105, 105);
+        margin-top: 3px;
+        margin-bottom: 3px;
+      }
+      .user_fame {
+        font-size: 16px;
+        color: rgb(108, 105, 105);
+      }
+
+      .user_container_right {
+        width: 70%;
+        height: 100%;
+        /* border: 1px solid purple; */
+        display: flex;
+        align-items: center;
+        justify-content: end;
+      }
+      .btn-follow {
+        padding: 8px 16px;
+        font-size: 16px;
+        color: #fff;
+        background-color: rgb(93, 158, 255);
+        border: none;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Container-->
+    <div class="container">
+      <!--User 1-->
+      <div class="users_container">
+        <div class="user_container_left">
+          <div class="user_container_left-img">
+            <img class="user_img" src="cat.jpg" alt="" />
+          </div>
+          <div class="user_container_left-info">
+            <div class="user_name">Oliver</div>
+            <div class="user_breed">the cat</div>
+            <div class="user_fame">popular</div>
+          </div>
+        </div>
+        <div class="user_container_right">
+          <button class="btn-follow">Follow</button>
+        </div>
+      </div>
+      <!--User 2-->
+      <div class="users_container">
+        <div class="user_container_left">
+          <div class="user_container_left-img">
+            <img class="user_img" src="cat2.jpg" alt="" />
+          </div>
+          <div class="user_container_left-info">
+            <div class="user_name">Mimi</div>
+            <div class="user_breed">sleepy cat</div>
+            <div class="user_fame">famous</div>
+          </div>
+        </div>
+        <div class="user_container_right">
+          <button class="btn-follow">Follow</button>
+        </div>
+      </div>
+      <!--User 3-->
+      <div class="users_container">
+        <div class="user_container_left">
+          <div class="user_container_left-img">
+            <img class="user_img" src="dog.jpg" alt="" />
+          </div>
+          <div class="user_container_left-info">
+            <div class="user_name">Rex</div>
+            <div class="user_breed">the bulldog</div>
+            <div class="user_fame">popular</div>
+          </div>
+        </div>
+        <div class="user_container_right">
+          <button class="btn-follow">Follow</button>
+        </div>
+      </div>
+      <!--End-->
+    </div>
+  </body>
+</html>

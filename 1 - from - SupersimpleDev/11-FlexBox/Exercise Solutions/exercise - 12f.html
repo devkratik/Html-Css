@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 12f</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family: Arial;
+        margin: 0;
+      }
+      .header_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(117, 59, 164);
+        height: 55px;
+      }
+      .header_left,
+      .header_right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+        /* border: 2px solid orange; */
+      }
+      .header__left-content {
+        color: #fff;
+        font-weight: bold;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .header_middle {
+        /* width: 400px; */
+        display: flex;
+        flex: 1;
+        max-width: 620px;
+        min-width: 150px;
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid orange; */
+      }
+      .header_middle-content {
+        width: 100%;
+        padding: 8px 2px 8px 12px;
+        border-radius: 22px;
+        font-size: 18px;
+        outline: none;
+        border: none;
+      }
+      input::placeholder {
+        font-size: 18px;
+      }
+      .header_right-content {
+        padding: 10px 24px;
+        border: 2px solid #c4c4c4;
+        border-radius: 4px;
+        color: #fff;
+        background-color: rgb(117, 59, 164);
+        font-size: 18px;
+        transition: all 300ms ease-in-out;
+      }
+      .header_right-content:hover {
+        cursor: pointer;
+        background-color: #c4c4c4;
+        color: rgb(117, 59, 164);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header_container">
+      <div class="header_left">
+        <p class="header__left-content">Home</p>
+      </div>
+      <div class="header_middle">
+        <input class="header_middle-content" placeholder="Search" type="text" />
+      </div>
+      <div class="header_right">
+        <button class="header_right-content">Download</button>
+      </div>
+    </div>
+  </body>
+</html>

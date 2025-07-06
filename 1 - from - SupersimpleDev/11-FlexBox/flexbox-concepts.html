@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn Flexbox</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+      }
+      .div1 {
+        background-color: darksalmon;
+      }
+      .div2 {
+        background-color: tan;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Flexbox concept is they also maintain vertical alignment and takes widht as much as needed !-->
+    <div class="container">
+      <div class="div1">DIV1 *added text*</div>
+      <div class="div2">
+        DIV2
+        <p>*added text*</p>
+      </div>
+    </div>
+    <!-- Flexbox practice 2-->
+    <div class="container">
+      <div style="background-color: darksalmon; width: 100px">100px</div>
+      <div style="background-color: tan; width: 200px; flex: 1">flex:1</div>
+    </div>
+    <!-- Flexbox practice 3-->
+    <div class="container">
+      <div style="background-color: tan; width: 200px; flex: 1">flex:1</div>
+      <div style="background-color: darksalmon; width: 100px">100px</div>
+      <div style="background-color: rgb(168, 154, 150); width: 100px; flex: 2">
+        flex:2
+      </div>
+    </div>
+    <!-- Grids are more rigid , first we define template columns on container grid and then child element goes into that and then if we change layout does get effected
+     However flexbox are not like that they change their layout accordingly-->
+    <!--Another practive-->
+    <div
+      class="container"
+      style="height: 70px; border: 2px solid gray; justify-content: center"
+    >
+      <div style="background-color: tan; width: 100px">100px</div>
+      <div style="background-color: darksalmon; width: 100px">100px</div>
+      <div style="background-color: rgb(168, 154, 150); width: 100px">
+        100px
+      </div>
+    </div>
+    <!--Another practive-->
+    <div
+      class="container"
+      style="
+        height: 70px;
+        border: 2px solid gray;
+        justify-content: space-between;
+      "
+    >
+      <div style="background-color: tan; width: 100px">100px</div>
+      <div style="background-color: darksalmon; width: 100px">100px</div>
+      <div style="background-color: rgb(168, 154, 150); width: 100px">
+        100px
+      </div>
+    </div>
+    <!--Another practive-->
+    <div
+      class="container"
+      style="
+        height: 70px;
+        border: 2px solid gray;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <div style="background-color: tan; width: 100px">100px</div>
+      <div style="background-color: darksalmon; width: 100px">100px</div>
+      <div style="background-color: rgb(168, 154, 150); width: 100px">
+        100px
+      </div>
+    </div>
+  </body>
+</html>
