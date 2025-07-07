@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 13e</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+      }
+      .container {
+        width: 380px;
+        height: 180px;
+        margin: 50px 0px 0px 50px;
+        padding: 4px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+      }
+      .container_left {
+        width: 60px;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: start;
+      }
+      .left_img {
+        width: 100%;
+        height: 55px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .container_right {
+        flex: 1;
+        height: 100%;
+        /* border: 1px solid blue; */
+        padding: 2px 2px 2px 6px;
+      }
+      .container_right-top {
+        width: 100%;
+        height: 40%;
+        /* border: 1px solid orange; */
+      }
+      .right_top-text1 {
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+      .right_top-text2 {
+        font-size: 14px;
+      }
+      .text-special {
+        font-weight: normal;
+        font-size: 15px;
+        color: rgb(137, 137, 137);
+      }
+      .container_right-bottom {
+        width: 100%;
+        height: 60%;
+        padding: 4px;
+        /* border: 1px solid orange; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .bottom_info-container {
+        width: 100%;
+        height: 100%;
+        border: 1px solid gray;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+      }
+      .bottom_info-left {
+        width: 30%;
+        height: 100%;
+        background-color: rgba(128, 128, 128, 0.505);
+      }
+      .bottom_info-right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 6px;
+        align-items: start;
+      }
+      .info_right-text1 {
+        font-size: 16px;
+        color: rgb(128, 128, 128);
+        margin-bottom: 4px;
+      }
+      .info_right-text2 {
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container_left">
+        <img class="left_img" src="./cat.jpg" alt="" />
+      </div>
+      <div class="container_right">
+        <div class="container_right-top">
+          <div class="right_top-top">
+            <p class="right_top-text1">
+              supersimple.dev&nbsp;<span class="text-special"
+                >@SuperSimpleDev</span
+              >
+            </p>
+          </div>
+          <div class="right_top-bottom">
+            <p class="right_top-text2">
+              What is backend web development? A complete overview. New video is
+              up!
+            </p>
+          </div>
+        </div>
+        <div class="container_right-bottom">
+          <div class="bottom_info-container">
+            <div class="bottom_info-left"></div>
+            <div class="bottom_info-right">
+              <p class="info_right-text1">youtube.com</p>
+              <p class="info_right-text2">
+                Backend web development - A complete overview (2025)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

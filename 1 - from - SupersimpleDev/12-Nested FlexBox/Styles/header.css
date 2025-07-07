@@ -1,0 +1,115 @@
+.header{
+    height: 55px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-section{
+    /* background-color: lightblue; */
+    width: 230px;
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+}
+.header_menu-container{
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 10px;
+}
+.header_menu-img{
+    width: 100%;
+}
+.header_logo-container{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_logo{
+    width: 100%;
+}
+
+.middle-section{
+ /* background-color: lightpink; */
+ flex: 1;
+ max-width: 550px;
+ margin-left: 70px;
+ margin-right: 35px;
+ display: flex;
+ align-items: center;
+}
+
+.search_bar {
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid rgb(192,192,192);
+    box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+    width: 0;
+}
+
+.search_bar::placeholder{
+    font-family: Roboto , Arial;
+    font-size: 16px;
+
+}
+.search_icon{
+    height: 25px;
+}
+
+.search_button{
+    width: 66px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid rgb(192,192,192);
+    margin-left: -1px; 
+    margin-right: 10px;
+}
+
+.voiceSearch_button{
+    width: 40px;
+    height: 40px;
+    border-radius: 18px;
+    display: flex;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 249, 249);
+}
+
+.right-section{
+    /* background-color: lightblue; */
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.uploadIcon{
+     height: 24px;
+}
+.youtubeAppsIcon{
+    height: 24px;
+}
+.notificationsIcon{
+    height: 24px;
+}
+.curUser_picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    object-fit: cover;
+}
