@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube</title>
+    <link rel="stylesheet" href="./styles/general.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/sidebar.css" />
+    <link rel="stylesheet" href="./styles/video.css" />
+    <link rel="icon" type="image/png" href="./icons/icons8-youtube-100.png" />
+  </head>
+  <body>
+    <!--Header Section-->
+    <div class="header">
+      <div class="left-section">
+        <div class="header_menu-container">
+          <img
+            class="header_menu-img"
+            src="./icons/hamburger-menu.svg"
+            alt="menu"
+          />
+        </div>
+        <div class="header_logo-container">
+          <img class="header_logo" src="./icons/youtube-logo.svg" />
+        </div>
+      </div>
+      <div class="middle-section">
+        <input class="search_bar" type="text" placeholder="Search" />
+        <button class="search_button">
+          <img class="search_icon" src="./icons/search.svg" alt="searchIcon" />
+          <div class="tooltip">Search</div>
+        </button>
+        <button class="voiceSearch_button">
+          <img
+            class="voiceSearch_icon"
+            src="./icons/voice-search-icon.svg"
+            alt="voiceSearchIcon"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="upload_icon-container">
+          <img src="./icons/upload.svg" alt="" class="uploadIcon" />
+          <div class="tooltip">Create</div>
+        </div>
+        <div class="youtube_apps-container">
+          <img src="./icons/youtube-apps.svg" alt="" class="youtubeAppsIcon" />
+          <div class="tooltip">YouTube apps</div>
+        </div>
+        <div class="notifications_container">
+          <img
+            src="./icons/notifications.svg"
+            alt=""
+            class="notificationsIcon"
+          />
+          <div class="notification_count">3</div>
+          <div class="tooltip">Notifications</div>
+        </div>
+        <img
+          src="./channelProfiles/account_picture.jpg"
+          alt=""
+          class="curUser_picture"
+        />
+      </div>
+    </div>
+    <!--Sidebar Section-->
+    <div class="sidebar_container">
+      <div class="sidebar_links">
+        <div class="siderbar_icon">
+          <img class="icon-img" src="./icons/home.svg" alt="" />
+        </div>
+        <div class="siderbar_IconText">
+          <p class="sidebarIcon_text">Home</p>
+        </div>
+      </div>
+      <div class="sidebar_links">
+        <div class="siderbar_icon">
+          <img class="icon-img" src="./icons/explore.svg" alt="" />
+        </div>
+        <div class="siderbar_IconText">
+          <p class="sidebarIcon_text">Explore</p>
+        </div>
+      </div>
+      <div class="sidebar_links">
+        <div class="siderbar_icon">
+          <img class="icon-img" src="./icons/subscriptions.svg" alt="" />
+        </div>
+        <div class="siderbar_IconText">
+          <p class="sidebarIcon_text">Subscriptions</p>
+        </div>
+      </div>
+      <div class="sidebar_links">
+        <div class="siderbar_icon">
+          <img class="icon-img" src="./icons/originals.svg" alt="" />
+        </div>
+        <div class="siderbar_IconText">
+          <p class="sidebarIcon_text">Originals</p>
+        </div>
+      </div>
+      <div class="sidebar_links">
+        <div class="siderbar_icon">
+          <img class="icon-img" src="./icons/youtube-music.svg" alt="" />
+        </div>
+        <div class="siderbar_IconText">
+          <p class="sidebarIcon_text">YouTube Music</p>
+        </div>
+      </div>
+      <div class="sidebar_links">
+        <div class="siderbar_icon">
+          <img class="icon-img" src="./icons/library.svg" alt="" />
+        </div>
+        <div class="siderbar_IconText">
+          <p class="sidebarIcon_text">Library</p>
+        </div>
+      </div>
+    </div>
+    <!--Video Grid Container-->
+    <div class="video-grid-container">
+      <!--video1-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/02.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img class="profile-img" src="./channelProfiles/01.jpg" alt="" />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">HTML & CSS Full Course - Beginner to Pro</p>
+            <p class="video_creator">SuperSimpleDev</p>
+            <p class="video_stats">15M views &middot; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--video2-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/05.webp"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img class="profile-img" src="./channelProfiles/02.jpg" alt="" />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Kadane's Algorithm to Maximum Sum Subarray Problem
+            </p>
+            <p class="video_creator">CS Dojo</p>
+            <p class="video_stats">783K views &middot; 9 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video3-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/04.jpeg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img class="profile-img" src="./channelProfiles/Yeat.jpg" alt="" />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">If we being real [Official Audio]</p>
+            <p class="video_creator">Yeat Music</p>
+            <p class="video_stats">38M views &middot; 1 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video4-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/06.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/radiantspark.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              TIMELESS but it sounds heavenly (OVERLAPPED + REVERBED + BASS
+              BOOSTED + SLOWED)
+            </p>
+            <p class="video_creator">ʀᴀᴅɪᴀɴᴛ ꜱᴘᴀʀᴋ</p>
+            <p class="video_stats">2.8M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video5-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/09.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img class="profile-img" src="./channelProfiles/carti.jpg" alt="" />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Playboi Carti - TRIM [with Future] (Official Audio)
+            </p>
+            <p class="video_creator">Playboi Carti</p>
+            <p class="video_stats">1.6M views &middot; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video6-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/01.jpeg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/kendrick.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">Kendrick Lamar, SZA - All The Stars</p>
+            <p class="video_creator">Kendrick Lamar</p>
+            <p class="video_stats">547M views&middot; 7 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video7-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/03.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/supertalksmovingship.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Pavneet Singh on Iran Vs Israel War, America's Conspiracy and
+              India's Powerful Response | ST109
+            </p>
+            <p class="video_creator">Supertalks by themovingship</p>
+            <p class="video_stats">423K views &middot; 11 days ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video8-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/07.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img class="profile-img" src="./channelProfiles/nfl.jpg" alt="" />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Kendrick Lamar's Apple Music Super Bowl Halftime Show
+            </p>
+            <p class="video_creator">NFL</p>
+            <p class="video_stats">135M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video9-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/08.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/deftalks.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              India's Operation Med Max, Global Syndicate BUSTED!! Amit Shah &
+              Internal Security, NCB NIA I Aadi
+            </p>
+            <p class="video_creator">DEF Talks by Aadi</p>
+            <p class="video_stats">44K views &middot; 22 hours ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video10-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/10.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/weeknd.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              The Weeknd & Ariana Grande - Save Your Tears (Remix) (Official
+              Video)
+            </p>
+            <p class="video_creator">The Weeknd</p>
+            <p class="video_stats">344M views &middot; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video11-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/11.jpeg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/kendrick.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">Kendrick Lamar - luther (Official Audio)</p>
+            <p class="video_creator">Kendrick Lamar</p>
+            <p class="video_stats">127M views &middot; 7 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video12-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/12.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/skeler.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">Juice WRLD - Conversations (Skeler Remix)</p>
+            <p class="video_creator">skeler.</p>
+            <p class="video_stats">33M views &middot; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video13-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/13.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/yellowDudeGravegear.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Everything you need to know before training calisthenics (at home
+              no weights)
+            </p>
+            <p class="video_creator">Yellow Dude | Gravgear</p>
+            <p class="video_stats">2M views &middot; 8 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video14-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/14.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/alttimofy.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">Sound of four Su-57 (for connoisseurs)</p>
+            <p class="video_creator">AltTimofey</p>
+            <p class="video_stats">8.8M views&middot; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video15-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/15.jpeg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/50cent.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              50 Cent - Candy Shop (Official Music Video) ft. Olivia
+            </p>
+            <p class="video_creator">50 Cent</p>
+            <p class="video_stats">1B views &middot; 16 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video16-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/16.jpeg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/martata.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">V PUTIN / GANSTA’S PARADISE</p>
+            <p class="video_creator">martata</p>
+            <p class="video_stats">12M views views &middot; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video17-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/17.jpeg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/postMalone.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Post Malone, Swae Lee - Sunflower (Spider-Man: Into the
+              Spider-Verse) (Official Video)
+            </p>
+            <p class="video_creator">Post Malone</p>
+            <p class="video_stats">2.7B views &middot; 6 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video18-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/18.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/kendrick.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">Kendrick Lamar - HUMBLE.</p>
+            <p class="video_creator">Kendrik Lamar</p>
+            <p class="video_stats">1B views &middot; 8 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video19-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/19.jpeg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/sohkha.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Travis Scott - My Eyes - (Second Half Extended)
+            </p>
+            <p class="video_creator">sohkha</p>
+            <p class="video_stats">27M views&middot; 1 year ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video20-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/20.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/yellowDudeGravegear.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Why you’re not losing fat in the areas you want
+            </p>
+            <p class="video_creator">Yellow Dude | Gravgear</p>
+            <p class="video_stats">3.4M views &middot; 3 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video21-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/21.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/lowlevelgamedev.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">The 5 Levels Of C++</p>
+            <p class="video_creator">Low Level Game Dev</p>
+            <p class="video_stats">72K views &middot; 1 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video22-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/22.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/dudePerfect.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">First To The Top Wins A Lamborghini</p>
+            <p class="video_creator">Dude Perfect</p>
+            <p class="video_stats">6.3M views &middot; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video23-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/24.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/cricket madness.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">
+              Dale Steyn Best Bowling: A Compilation of His Greatest Wickets
+            </p>
+            <p class="video_creator">Cricket Madness</p>
+            <p class="video_stats">921K views &middot; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+      <!--Video24-->
+      <div class="video-preview">
+        <div class="video-thumbnai">
+          <img
+            class="thumbnail img_learning"
+            src="./thumbnails/23.jpg"
+            alt=""
+          />
+          <div class="video_time">14:20</div>
+        </div>
+        <div class="video-info-grid">
+          <div class="channel-img">
+            <img
+              class="profile-img"
+              src="./channelProfiles/dudePerfect.jpg"
+              alt=""
+            />
+          </div>
+          <div class="video-info_content">
+            <p class="video_title">Olympic Mini Games Battle</p>
+            <p class="video_creator">Dude Perfect</p>
+            <p class="video_stats">10M views &middot; 11 months ago</p>
+          </div>
+        </div>
+      </div>
+      <!--END-->
+    </div>
+  </body>
+</html>
