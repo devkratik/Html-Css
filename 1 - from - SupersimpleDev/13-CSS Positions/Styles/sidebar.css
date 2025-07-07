@@ -1,0 +1,9 @@
+.sidebar_container{
+    width: 72px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: #fff;
+   border-right: 1px solid rgb(228, 228, 228)
+}

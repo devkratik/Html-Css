@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS Positions</title>
+  </head>
+  <body style="height: 3000px; padding-top: 60px; padding-left: 80px">
+    <!--Header-->
+    <div
+      style="
+        background-color: lightyellow;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 40px;
+        border: 1px solid red;
+        z-index: 1;
+      "
+    >
+      Header
+    </div>
+    <!--Sidebar-->
+    <div
+      style="
+        background-color: lightsalmon;
+        width: 70px;
+        position: fixed;
+        top: 40px;
+        bottom: 0px;
+        left: 0px;
+        border: 1px solid black;
+      "
+    >
+      Sidebar
+      <div
+        style="
+          background-color: red;
+          color: #fff;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+        "
+      >
+        x
+      </div>
+    </div>
+    <!--Position absolute-->
+    <div
+      style="
+        background-color: red;
+        color: #fff;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+      "
+    >
+      absolute
+    </div>
+    <!--Content-->
+    <div
+      style="
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;
+        position: static;
+      "
+    >
+      Div1
+    </div>
+    <div
+      style="
+        background-color: lightpink;
+        width: 200px;
+        height: 200px;
+        position: relative;
+      "
+    >
+      Div2
+      <div
+        style="
+          background-color: rgb(0, 0, 0);
+          color: #fff;
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+        "
+      >
+        12:40
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 14e</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: Arial;
+      }
+      .headerContainer {
+        background-color: #fff;
+        border: 1px solid #fff1f1;
+        border-radius: 20px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.502);
+        position: fixed;
+        top: 20px;
+        left: 200px;
+        right: 200px;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+      .header_leftContainer {
+        width: 190px;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        /* border: 1px solid orange; */
+      }
+      .img_container {
+        width: 50%;
+        height: 100%;
+        /* border: 1px solid blue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo_img {
+        width: 64%;
+        height: 95%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+      .logo_title {
+        flex: 1;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .header_rightContainer {
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid orange; */
+        display: flex;
+        justify-content: space-around;
+      }
+      .add-btn {
+        padding: 8px 16px;
+        background-color: rgb(64, 177, 234);
+        color: #fff;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      .msg-btn {
+        cursor: pointer;
+        padding: 8px 16px;
+        background-color: rgba(123, 123, 123, 0.372);
+        color: #0a0a0a;
+        font-weight: bold;
+        border: none;
+        border-radius: 6px;
+      }
+    </style>
+  </head>
+  <body style="background-color: honeydew; height: 3000px">
+    <div class="headerContainer">
+      <div class="header_leftContainer">
+        <div class="img_container">
+          <img class="logo_img" src="./friend.jpg" alt="" />
+        </div>
+        <div class="logo_title">
+          <p class="logo_text">Bella</p>
+        </div>
+      </div>
+      <div class="header_rightContainer">
+        <button class="add-btn">Add friend</button
+        ><button class="msg-btn">Message</button>
+      </div>
+    </div>
+  </body>
+</html>

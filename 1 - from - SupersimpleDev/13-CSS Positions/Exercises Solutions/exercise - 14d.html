@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 14d</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      .sidebar {
+        width: 80px;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        bottom: 0px;
+        background-color: rgb(240, 216, 121);
+      }
+      .modal {
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal_content-container {
+        width: 300px;
+        padding: 8px;
+        background-color: #fff;
+        border: 1px solid gray;
+        border-radius: 4px;
+      }
+      .modal_title {
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Arial;
+        margin-bottom: 10px;
+      }
+      .modal_subtitle {
+        font-size: 16px;
+        font-family: Arial;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(217, 249, 239); height: 3000px">
+    <div class="sidebar">SideBar</div>
+
+    <div class="modal">
+      <div class="modal_content-container">
+        <p class="modal_title">Modal Title</p>
+        <p class="modal_subtitle">This is a modal.</p>
+        <button>Close</button>
+      </div>
+    </div>
+  </body>
+</html>
