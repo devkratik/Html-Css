@@ -97,12 +97,17 @@
 }
 
 .explore_more-btn{
-width: 100%;
+    width: 100%;
+    cursor: pointer;
     padding: 8px 12px;
     border: none;
     border-radius: 2px;
     color: #000;
     background-color: orange;
+    transition: all 0.2s ease-in-out;
+}
+.explore_more-btn:hover{
+  background-color: rgb(227, 178, 87);
 }
 .header_container-right{
     width: 50%;
