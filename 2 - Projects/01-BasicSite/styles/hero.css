@@ -1,0 +1,76 @@
+/*NAVBAR*/
+.navbar{
+    height: 70px;
+    background-color: #CAFDFF;
+}
+.nav_row{
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.navbar_content-container{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 100%;
+   padding: 0px 10px;
+}
+.navbar_left-container, 
+.navigation_links{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.navbar_left-container{
+   width: 400px;     
+}
+.navbar_logo{
+    width: 100%;
+    object-fit: cover;
+}
+.navigation_links{
+    width: 30%;
+    font-size: 24px;
+    font-weight: 500;
+    list-style-type: none;
+}
+/*HEADER*/
+.header_container{
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-color: #EADCFF;
+}
+.header_content-container{
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_content-left,
+.header_content-right{
+    width: 48%;
+
+}
+.header_title{
+    font-size: 48px;
+}
+.header_subtitle{
+    font-size: 22px;
+    margin: 12px 0px;
+}
+.button{
+    cursor: pointer;
+    padding: 8px 10px;
+    border: none;
+    background-color: #05C7CF;
+    color: #fff;
+    font-weight: 500;
+}
+.header_img{
+    width: 100%;
+    object-fit: cover;
+}
+/* END */

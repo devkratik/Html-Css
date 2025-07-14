@@ -1,0 +1,29 @@
+.footer{
+    background-color: #CAF5FF;
+    padding: 40px 8px 40px 8px;
+}
+.footer_row{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.footer_img-container{
+    width:400px;
+}
+.footer_img{
+    width: 100%;
+}
+
+.links_footer{
+    margin-top: 12px;
+    width: 45%;
+    font-weight: bold;
+}
+.footer_text{
+    margin-top: 12px;
+}
+/*END*/
