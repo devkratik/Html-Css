@@ -1,0 +1,23 @@
+@media (max-width: 900px) {
+  .navbar {
+    padding: 0 1.6rem;
+  }
+
+  .navbar__link {
+    display: none;
+  }
+
+  .navbar__toggle {
+    display: block;
+  }
+
+  .navbar__logo {
+    width: 14rem;
+  }
+}
+@media (max-width: 550px) {
+  .navbar__login,
+  .navbar__join {
+    display: none;
+  }
+}
