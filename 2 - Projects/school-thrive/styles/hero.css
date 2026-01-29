@@ -11,7 +11,7 @@
 }
 .navbar {
   height: 7.2rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,17 +49,6 @@
   padding: 0.8rem 1.6rem;
   border: 2px solid #96bb7c;
 }
-
-.navbar__login {
-  background-color: transparent;
-  color: #96bb7c;
-  font-weight: 700;
-}
-.navbar__join {
-  color: #ffffff;
-  background-color: #96bb7c;
-  border-radius: 4px;
-}
 .navbar__toggle {
   display: none;
   background: none;
@@ -67,10 +56,11 @@
   font-size: 3rem;
 }
 .header {
-  height: calc(100vh - 7.2rem);
+  min-height: calc(100vh - 7.2rem);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0 6rem;
 }
 .header__right,
 .header__left {
@@ -86,5 +76,38 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+.header__tagline {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #96bb7c;
+  font-weight: 700;
+}
+.header__title {
+  margin-bottom: 1.2rem;
+  font-size: 4.8rem;
+  width: 80%;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.header__subtitle {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  color: #737373;
+  font-weight: 500;
+  width: 60%;
+  line-height: 1.5;
+}
+.header__options {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  width: 60%;
+}
+.header__purchase,
+.header__learn {
+  font-weight: 700;
+  padding: 0.8rem 1.6rem;
+  border: 2px solid #96bb7c;
 }

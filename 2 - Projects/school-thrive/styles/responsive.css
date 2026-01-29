@@ -1,4 +1,17 @@
-@media (max-width: 900px) {
+@media (max-width: 1125px) {
+  .header__title,
+  .header__options {
+    width: 100%;
+  }
+  .header__subtitle {
+    width: 75%;
+  }
+  .header {
+    padding: 0 4rem;
+  }
+}
+
+@media (max-width: 950px) {
   .navbar {
     padding: 0 1.6rem;
   }
@@ -11,10 +24,36 @@
     display: block;
   }
 
-  .navbar__logo {
-    width: 14rem;
+  .header__title {
+    font-size: 3.8rem;
+  }
+  .header__subtitle {
+    width: 80%;
   }
 }
+
+@media (max-width: 730px) {
+  .header {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+  .header__left {
+    margin-bottom: 6rem;
+    text-align: center;
+    width: 100%;
+  }
+  .header__right {
+    width: 100%;
+  }
+  .header__title {
+    font-size: 2.8rem;
+  }
+  .header__options {
+    justify-content: center;
+    border: 1px solid red;
+  }
+}
+
 @media (max-width: 550px) {
   .navbar__login,
   .navbar__join {

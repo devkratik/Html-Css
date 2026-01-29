@@ -18,3 +18,12 @@ a {
 button:hover {
   cursor: pointer;
 }
+.btn-greenfill {
+  color: #ffffff;
+  background-color: #96bb7c;
+}
+.btn-greenhollow {
+  border: 2px solid #96bb7c;
+  background-color: transparent;
+  color: #96bb7c;
+}
