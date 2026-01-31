@@ -9,6 +9,24 @@
   .header {
     padding: 0 4rem;
   }
+  .featurewrapper {
+    padding: 5rem 4rem;
+  }
+  .info {
+    align-items: center;
+    text-align: center;
+  }
+  .info__subtitle {
+    width: 75%;
+  }
+  .card__subtitle {
+    width: 90%;
+    text-align: center;
+  }
+  .card {
+    align-items: center;
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 950px) {
@@ -50,7 +68,9 @@
   }
   .header__options {
     justify-content: center;
-    border: 1px solid red;
+  }
+  .statscontainer {
+    gap: 5rem;
   }
 }
 
@@ -58,5 +78,8 @@
   .navbar__login,
   .navbar__join {
     display: none;
+  }
+  .featurewrapper {
+    padding: 8rem 2rem;
   }
 }
