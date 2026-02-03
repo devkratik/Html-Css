@@ -1,0 +1,58 @@
+.facultieswrapper {
+  padding: 8rem 7rem;
+  border: 1px solid red;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  border: 1px solid yellowgreen;
+}
+.courses__experts,
+.courses__training,
+.courses__books {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.courses__experts-img {
+  width: 100%;
+}
+.courses__experts-img img {
+  width: 100%;
+  object-fit: cover;
+}
+.courses__experts-reviews {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.courses__info {
+  padding: 1rem 2rem;
+}
+.review-txt {
+  color: #96bb7c;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.review-rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  gap: 0.4rem;
+  background-color: #2d4059;
+  padding: 0.3rem 0.5rem;
+}
+.review-rating i {
+  color: rgb(255, 208, 0);
+}
+.rating-txt {
+  color: #fff;
+  font-weight: 700;
+}
