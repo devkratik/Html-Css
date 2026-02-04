@@ -30,6 +30,9 @@
   .facultieswrapper {
     padding: 5rem 4rem;
   }
+  .testimonialContent {
+    padding: 5rem 4rem;
+  }
 }
 
 @media (max-width: 950px) {
@@ -59,6 +62,12 @@
     text-align: center;
     align-items: center;
   }
+  .testimonials__card {
+    padding: 1.2rem;
+  }
+  .testimonial__text {
+    width: 100%;
+  }
 }
 
 @media (max-width: 730px) {
@@ -86,12 +95,18 @@
   .courses {
     flex-direction: column;
   }
-  .courses__experts {
+  .courses__name {
     width: 50%;
   }
 
   .processwrapper {
     padding: 4rem;
+  }
+  .testimonials {
+    flex-direction: column;
+  }
+  .testimonials__card {
+    width: 60%;
   }
 }
 
@@ -115,7 +130,13 @@
   .facultieswrapper {
     padding: 2rem 1rem;
   }
-  .courses__experts {
+  .courses__name {
     width: 70%;
+  }
+  .courses__description {
+    width: 100%;
+  }
+  .testimonials__card {
+    width: 80%;
   }
 }
