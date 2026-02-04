@@ -33,6 +33,15 @@
   .testimonialContent {
     padding: 5rem 4rem;
   }
+  .partnerswrapper {
+    padding: 5rem 4rem;
+  }
+  .newsletterwrapper {
+    padding: 5rem 4rem;
+  }
+  .footerwrapper {
+    padding: 5rem 4rem;
+  }
 }
 
 @media (max-width: 950px) {
@@ -130,6 +139,9 @@
   .facultieswrapper {
     padding: 2rem 1rem;
   }
+  .testimonialContent {
+    padding: 2rem 1rem;
+  }
   .courses__name {
     width: 70%;
   }
@@ -138,5 +150,27 @@
   }
   .testimonials__card {
     width: 80%;
+  }
+  .info__subtitle {
+    width: 100%;
+  }
+  .subscribe__form {
+    width: 24rem;
+  }
+  .newsletterwrapper {
+    padding: 2rem 1rem;
+  }
+  .footerwrapper {
+    padding: 2rem 1rem;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
   }
 }

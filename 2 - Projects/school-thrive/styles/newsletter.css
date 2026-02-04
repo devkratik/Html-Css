@@ -1,0 +1,45 @@
+.newsletterwrapper {
+  padding: 8rem 7rem;
+  /* border: 1px solid red; */
+}
+.subscribe {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* border: 1px solid greenyellow; */
+}
+.subscribe .info {
+  /* border: 1px solid red; */
+  text-align: center;
+  align-items: center;
+}
+.subscribe__form {
+  position: relative;
+  width: 40rem;
+}
+.subscribe__form input {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #737373;
+  outline: none;
+  letter-spacing: 1px;
+  padding: 1rem 2rem;
+  border: 1px solid #e5e5e5;
+}
+.subscribe__form input::placeholder {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: normal;
+}
+.subscribe__form-submit {
+  background-color: #96bb7c;
+  color: #fff;
+  border: 2px solid #96bb7c;
+  padding: 0.88rem 1rem;
+  position: absolute;
+  right: 0px;
+}

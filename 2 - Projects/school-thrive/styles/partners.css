@@ -1,0 +1,29 @@
+.partnerswrapper {
+  padding: 8rem 7rem;
+  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.partners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid greenyellow; */
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.partner__image {
+  display: flex;
+  width: 120px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.partner__image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
