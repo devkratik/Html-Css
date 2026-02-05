@@ -33,6 +33,7 @@ html {
   --color-neutral-100: #eaebec;
   --color-main: #0d1728;
   --color-white: #ffffff;
+  --color-stroke: #4c5562;
 
   /* Text */
   --color-text-primary: var(--color-neutral-900);
@@ -86,12 +87,13 @@ body {
   line-height: var(--lh-normal);
   color: var(--color-text-primary);
   background: var(--color-white);
+  height: 3000px;
 }
 .container {
   max-width: 1240px;
   margin-inline: auto;
   padding-inline: var(--space-4);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 a {

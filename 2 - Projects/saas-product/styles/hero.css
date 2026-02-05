@@ -2,12 +2,34 @@
   min-height: 100vh;
   background-color: var(--color-main);
   padding: var(--space-4);
+  position: relative;
+  overflow: hidden;
 }
+.hero__bg::before,
+.hero__bg::after {
+  content: "";
+  position: absolute;
+  width: 48rem;
+  height: 140vh;
+  background: rgba(255, 255, 255, 0.05);
+  transform: rotate(-22deg);
+}
+.hero__bg::before {
+  top: -80px;
+  left: -10px;
+}
+.hero__bg::after {
+  top: -120px;
+  right: -180px;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--space-16);
+  height: 4.2rem;
+  margin-bottom: var(--space-5);
 }
 .navbar__logo {
   width: 12rem;
@@ -61,4 +83,69 @@
   background: transparent;
   border: none;
   font-size: var(--fs-lg);
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  margin-inline: auto;
+  text-align: center;
+  position: relative;
+}
+.header__subtitle {
+  color: var(--color-white);
+  opacity: 70%;
+  margin-bottom: var(--space-3);
+  font-size: var(--fs-md);
+}
+.header__title {
+  color: var(--color-white);
+  font-size: var(--fs-xxl);
+  font-weight: 600;
+  line-height: var(--lh-tight);
+  margin-bottom: var(--space-4);
+}
+.header__form {
+  position: relative;
+  min-width: 70%;
+  flex-shrink: 0;
+}
+.header__form-input {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--color-white);
+  font-size: var(--fs-md);
+  color: var(--color-white);
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-xl);
+  letter-spacing: 1px;
+  outline: none;
+}
+.header__form-input::placeholder {
+  color: var(--color-white);
+  opacity: 50%;
+}
+.header__form-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: var(--radius-xl);
+  font-size: var(--fs-md);
+  font-weight: 800;
+}
+
+.header__image {
+  position: absolute;
+  width: 50%;
+  bottom: -340px;
+  border-radius: var(--radius-md);
+  transform: translateX(50%);
+}
+.header__image img {
+  width: 100%;
+  object-fit: cover;
 }
