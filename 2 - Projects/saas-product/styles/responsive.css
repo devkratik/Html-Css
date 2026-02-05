@@ -1,0 +1,26 @@
+@media (max-width: 970px) {
+  .navbar {
+    gap: var(--space-7);
+  }
+  .navbar__link {
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 790px) {
+  .navbar {
+    justify-content: space-between;
+  }
+  .navbar__link {
+    display: none;
+  }
+  .navbar__toggle {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar__option-btn {
+    display: none;
+  }
+}

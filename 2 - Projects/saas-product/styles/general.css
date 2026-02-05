@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  /* Brand */
+  --color-primary: #1681fe;
+  --color-secondary: #448c74;
+
+  /* Status */
+  --color-success: var(--color-secondary);
+  --color-warning: #edcb50;
+  --color-error: #fe164e;
+
+  /* Neutral */
+  --color-neutral-900: #10141a;
+  --color-neutral-800: #191e27;
+  --color-neutral-700: #212834;
+  --color-neutral-600: #293241;
+  --color-neutral-500: #545b67;
+  --color-neutral-400: #7f848d;
+  --color-neutral-300: #a9adb3;
+  --color-neutral-200: #d4d6d9;
+  --color-neutral-100: #eaebec;
+  --color-main: #0d1728;
+  --color-white: #ffffff;
+
+  /* Text */
+  --color-text-primary: var(--color-neutral-900);
+  --color-text-secondary: var(--color-neutral-500);
+  --color-text-inverse: var(--color-white);
+  /* spacing scale (8pt system) */
+  --space-1: 0.4rem; /* 4px  */
+  --space-2: 0.8rem; /* 8px  */
+  --space-3: 1.6rem; /* 16px */
+  --space-4: 2.4rem; /* 24px */
+  --space-5: 3.2rem; /* 32px */
+  --space-6: 4rem; /* 40px */
+  --space-7: 4.8rem; /* 48px */
+  --space-8: 5.6rem; /* 56px */
+  --space-9: 6.4rem; /* 64px */
+  --space-10: 7.2rem; /* 72px */
+  --space-11: 8rem; /* 80px */
+  --space-12: 8.8rem; /* 88px */
+  --space-13: 9.6rem; /* 96px */
+  --space-14: 10.4rem; /* 104px */
+  --space-15: 11.2rem; /* 112px */
+  --space-16: 12rem; /* 120px */
+  /*font-sizes*/
+  --fs-sm: 1.2rem;
+  --fs-base: 1.4rem;
+  --fs-md: 1.6rem;
+  --fs-lg: 2.4rem;
+  --fs-xl: 3.2rem;
+  --fs-xxl: 4.4rem;
+  /*line height*/
+  --lh-tight: 1.2;
+  --lh-normal: 1.5;
+  --lh-loose: 1.7;
+  /*radius*/
+  --radius-sm: 0.4rem;
+  --radius-md: 0.8rem;
+  --radius-lg: 1.2rem;
+  --radius-xl: 2rem;
+  /*shadows*/
+  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.16);
+  /*z-index scale*/
+  --z-base: 1;
+  --z-dropdown: 10;
+  --z-sticky: 100;
+  --z-modal: 1000;
+}
+body {
+  font-family: "Anybody", Arial, Helvetica, sans-serif;
+  line-height: var(--lh-normal);
+  color: var(--color-text-primary);
+  background: var(--color-white);
+}
+.container {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: var(--space-4);
+  border: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+}
