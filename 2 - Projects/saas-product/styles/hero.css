@@ -87,10 +87,10 @@
   font-size: var(--fs-lg);
 }
 .header {
-  /* min-height: calc(100vh - 80px); */
+  min-height: calc(100vh - 80px);
 
   display: flex;
-  flex: 1;
+  justify-content: center;
   flex-direction: column;
   border: 1px solid red;
   align-items: center;
