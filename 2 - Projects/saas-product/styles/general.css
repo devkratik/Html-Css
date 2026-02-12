@@ -94,7 +94,7 @@ body {
 .container {
   max-width: 1240px;
   margin-inline: auto;
-  padding-inline: var(--space-4);
+  padding-inline: var(--space-2);
   /* border: 1px solid red; */
 }
 

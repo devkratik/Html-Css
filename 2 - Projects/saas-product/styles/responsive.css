@@ -11,6 +11,9 @@
   .hero__bg::after {
     width: 39rem;
   }
+  .hero__image {
+    transform: translate(-50%, -20%);
+  }
 }
 
 @media (max-width: 790px) {
@@ -44,5 +47,14 @@
   .hero__bg::before {
     left: 50%;
     transform: translateX(-50%) rotateZ(-22deg);
+  }
+  .hero__image {
+    transform: translate(-50%, -30%);
+  }
+  .header__title {
+    font-size: var(--fs-xl);
+  }
+  .header__form {
+    width: 100%;
   }
 }
