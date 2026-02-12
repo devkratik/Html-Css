@@ -9,6 +9,7 @@
 }
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -88,6 +89,7 @@ body {
   color: var(--color-text-primary);
   background: var(--color-white);
   height: 3000px;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1240px;
