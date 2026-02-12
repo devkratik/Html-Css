@@ -1,5 +1,5 @@
 .hero {
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: var(--color-main);
   padding: var(--space-2);
   position: relative;
@@ -87,8 +87,10 @@
   font-size: var(--fs-lg);
 }
 .header {
-  min-height: calc(100vh - 80px);
+  /* min-height: calc(100vh - 80px); */
+
   display: flex;
+  flex: 1;
   flex-direction: column;
   border: 1px solid red;
   align-items: center;
