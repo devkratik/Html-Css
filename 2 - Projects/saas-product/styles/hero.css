@@ -98,8 +98,7 @@
   left: 50%;
   top: 100%;
   transform: translate(-50%, -50%);
-  width: 60%;
-  max-width: 900px;
+  width: min(1000px, 85%);
 }
 .hero__image img {
   width: 100%;
