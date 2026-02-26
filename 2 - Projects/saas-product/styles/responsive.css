@@ -37,6 +37,7 @@
 @media (max-width: 550px) {
   .hero {
     padding-inline: 1rem;
+    padding-block: 2rem;
   }
   .navbar__option-btn {
     display: none;
@@ -46,18 +47,17 @@
   }
   .hero__bg::before {
     left: 50%;
+    height: 100vh;
     transform: translateX(-50%) rotateZ(-22deg);
   }
   .hero__image {
     transform: translate(-50%, -10%);
+    width: 95%;
   }
-  /* .header__title {
+  .header__title {
     font-size: var(--fs-xl);
-  } */
+  }
   .header__form {
     width: 100%;
-  }
-  .hero__bg::before {
-    height: 10rem;
   }
 }

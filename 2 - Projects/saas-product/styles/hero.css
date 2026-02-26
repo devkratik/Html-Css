@@ -1,18 +1,25 @@
 .hero {
+  display: flex;
+  flex-direction: column;
   min-height: 100dvh;
   background-color: var(--color-main);
   padding: var(--space-2);
   position: relative;
-  border: 1px solid red;
-  overflow: visible;
+  /* border: 1px solid red; */
+}
+
+.hero__bg {
+  position: absolute;
+  /* border: 1px solid yellow; */
+  inset: 0;
 }
 
 .hero__bg::before,
 .hero__bg::after {
   content: "";
   position: absolute;
-  width: 52rem;
-  min-height: 260vh;
+  width: 38rem;
+  min-height: 230vh;
   opacity: 5%;
   background-color: #fff;
   transform: rotateZ(-22deg);
@@ -87,12 +94,11 @@
   font-size: var(--fs-lg);
 }
 .header {
-  min-height: calc(100vh - 80px);
-
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  border: 1px solid red;
+  min-height: calc(100dvh - 4.2rem);
+  /* border: 1px solid rgb(187, 0, 255); */
+  padding-block: 4rem;
   align-items: center;
   text-align: center;
 }
@@ -140,7 +146,7 @@
   position: absolute;
   left: 50%;
   top: 100%;
-  transform: translate(-50%, -45%);
+  transform: translate(-50%, -35%);
   width: min(700px, 85%);
 }
 .hero__image img {
