@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Oxcare</title>
+  </head>
+  <body>
+    <!--hero-->
+    <section class="bg-green-100 min-h-screen">
+      <div class="w-full max-w-[1200px] mx-auto">
+        <!--navbar-->
+        <nav class="px-4 h-15 flex justify-between items-center">
+          <!--navbar logo-->
+          <div class="flex justify-center items-center overflow-hidden">
+            <i
+              class="ri-mental-health-line text-green-600 font-medium text-4xl"
+            ></i>
+            <p class="text-green-500 font-medium text-3xl">oxcare</p>
+          </div>
+          <!--navbar links-->
+          <ul
+            class="hidden min-[668px]:flex items-center gap-4 min-[900px]:gap-8 list-none"
+          >
+            <li class="text-black font-medium">
+              <a href="#">Home</a>
+            </li>
+            <li class="text-black font-medium">
+              <a href="#">About</a>
+            </li>
+            <li class="text-black font-medium">
+              <a href="#">Doctors</a>
+            </li>
+            <li class="text-black font-medium">
+              <a href="#">Services</a>
+            </li>
+            <li class="text-black font-medium">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <!--navbar options-->
+          <div class="hidden min-[768px]:flex items-center gap-4">
+            <button
+              class="bg-white text--500 font-medium px-4 py-2 rounded-md cursor-pointer"
+            >
+              Login
+            </button>
+            <button
+              class="bg-green-500 text-white font-medium px-4 py-2 rounded-md cursor-pointer"
+            >
+              Signup
+            </button>
+          </div>
+          <!--navbar menu-->
+          <button
+            class="px-2 py-1 bg-green-400 rounded-md flex justify-center items-center min-[768px]:hidden"
+          >
+            <i class="ri-menu-line text-xl text-white font-medium"></i>
+          </button>
+        </nav>
+        <!--header-->
+        <header
+          class="px-6 pt-6 min-[1024px]:pt-0 flex flex-col min-[768px]:flex-row items-center min-[768px]:justify-between"
+        >
+          <!--header info-->
+          <div
+            class="text-center space-y-2 min-[768px]:w-5/12 min-[768px]:text-left"
+          >
+            <h1 class="text-4xl font-medium mb-4">
+              We will help you to Improve your mental health
+            </h1>
+            <p class="text-xl mb-6 min-[380px]:mb-12">
+              Eu sit proin amet quis malesuada vitae elit. Vel consectetur nibh
+              quis ullamcorper quis. Quam enim tortor, id sed
+            </p>
+            <div
+              class="flex flex-col min-[380px]:flex-row justify-center min-[768px]:justify-start items-center min-[768px]:items-start gap-4"
+            >
+              <button
+                class="cursor-pointer bg-green-600 text-white font-medium px-8 min-[380px]:px-4 py-2 rounded-md"
+              >
+                Get Appointment
+              </button>
+              <button
+                class="cursor-pointer bg-white text-black font-medium px-8 min-[380px]:px-4 py-2 rounded-md"
+              >
+                Get Specialist
+              </button>
+            </div>
+          </div>
+          <!--header image-->
+          <figure
+            class="w-full min-[420px]:w-6/12 min-[768px]:h-[calc(100vh-60px)] flex justify-center items-center overflow-hidden"
+          >
+            <img
+              src="./assets/header.svg"
+              alt="header-image"
+              class="w-full object-cover scale-100"
+            />
+          </figure>
+        </header>
+      </div>
+    </section>
+    <!--main section-->
+    <main class="p-2">
+      <section class="p-2"></section>
+    </main>
+  </body>
+</html>
+
+<!--
+
+use these pixesl for convenience 
+
+📱 375px (Mobile)
+        ↓
+📱 430px (Large Mobile)
+        ↓
+📱 768px (Tablet)
+        ↓
+💻 1024px (Laptop)
+        ↓
+🖥️ 1440px (Desktop)
+
+After every small section you build:
+
+Check mobile.
+Stretch to tablet.
+Stretch to desktop.
+
+Don't finish the whole page and then try to make it responsive—that usually leads to a lot of rework.
+
+-->
